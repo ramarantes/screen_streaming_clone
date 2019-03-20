@@ -1,8 +1,9 @@
 import {actionTypes} from './consts'
 
-export const signIn = () => {
+export const signIn = payload => {
     return {
-        type: actionTypes.SIGN_IN
+        type: actionTypes.SIGN_IN,
+        payload
     }
 }
 
