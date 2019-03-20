@@ -8,14 +8,17 @@ import StreamCreate from './Streams/StreamCreate'
 import Header from './Header'
 
 
+
 export default () => 
     <div className="ui container">
-        <BrowserRouter>
-        <Header />
-        <Route path="/" exact  component={StreamList} />        
-        <Route path="/streams/new" component={StreamCreate} />
-        <Route path="/streams/edit"  component={StreamEdit} />
-        <Route path="/streams/delete" component={StreamDelete} />
-        <Route path="/streams/show"  component={StreamShow} />
-        </BrowserRouter>
+        
+            <BrowserRouter>
+                <Header />
+                <Route path="/" exact  component={StreamList} />        
+                <Route path="/streams/new" component={StreamCreate} />
+                <Route path="/streams/edit"  component={StreamEdit} />
+                <Route path="/streams/delete" component={StreamDelete} />
+                <Route path="/streams/show"  component={StreamShow} />
+            </BrowserRouter>
+        
     </div>
